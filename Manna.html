@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Master - 200 Levels</title>
+  <link rel="stylesheet" href="Manna.css">
+</head>
+<body>
+
+  <div class="game">
+    <header>
+      <h1>🧠 QUIZ MASTER</h1>
+      <p>Challenge your brain. Conquer 200 levels!</p>
+    </header>
+
+    <section class="stats">
+      <div class="stat">
+        <span>⭐ Score</span>
+        <strong id="score">0</strong>
+      </div>
+
+      <div class="stat">
+        <span>🏆 Level</span>
+        <strong id="level">1 / 200</strong>
+      </div>
+
+      <div class="stat">
+        <span>❤️ Lives</span>
+        <strong id="lives">❤️❤️❤️</strong>
+      </div>
+    </section>
+
+    <div class="progress-box">
+      <div id="progress"></div>
+    </div>
+
+    <main id="quiz">
+      <div class="level-label" id="levelLabel">LEVEL 1</div>
+
+      <div class="timer">
+        ⏱️ Time: <span id="timer">20</span>s
+      </div>
+
+      <h2 id="question">Loading question...</h2>
+
+      <div id="answers" class="answers"></div>
+
+      <p id="feedback"></p>
+
+      <button id="nextBtn" class="main-btn" hidden>
+        Next Question ➜
+      </button>
+    </main>
+
+    <section id="result" hidden>
+      <h2 id="resultTitle">Level Complete!</h2>
+      <p id="resultMessage"></p>
+      <button id="continueBtn" class="main-btn">
+        Continue ➜
+      </button>
+      <button id="retryBtn" class="secondary-btn" hidden>
+        Try Again
+      </button>
+    </section>
+
+    <section class="level-section">
+      <h3>🗺️ Level Map</h3>
+      <div id="levelMap" class="level-map"></div>
+    </section>
+
+    <footer>
+      <button id="resetBtn" class="reset-btn">
+        Reset Game
+      </button>
+      <p>Quiz Master © 2026</p>
+    </footer>
+  </div>
+
+  <script src="Manna.js"></script>
+</body>
+</html>
